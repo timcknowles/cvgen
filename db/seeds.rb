@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+Resume.create(title:'Dr', name:'Tim', address: '145a Abbey road')
+Resume.create(title:'Dr', name:'Ed', address: 'Nevun Place')
+Resume.create(title:'Dr', name:'Greg', address: 'flower sq')
+Resume.create(title:'Dr', name:'El', address: '145a Abbey road')

@@ -1,4 +1,7 @@
 Cvgen::Application.routes.draw do
+  resources :resumes
+
+
   resources :resume_sections
 
 
