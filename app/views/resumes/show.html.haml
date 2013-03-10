@@ -12,10 +12,13 @@
 
 %h3 Sections
 
-  - @resume.resume_sections.each do |section|
-    =section.title
+- @resume.resume_sections.each do |section|
+  %h2
+    =section.name
+  %p
+    =section.content
 
-= link_to 'Add_Section', new_resume_path
+= link_to 'Add_Section', new_resume_section_path(@resume)
 
 = link_to 'Edit', edit_resume_path(@resume)
 \|
