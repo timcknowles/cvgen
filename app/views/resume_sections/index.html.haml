@@ -1,0 +1,21 @@
+%h1 Listing resume_sections
+
+%table
+  %tr
+    %th Name
+    %th Content
+    %th
+    %th
+    %th
+
+  - @resume_sections.each do |resume_section|
+    %tr
+      %td= resume_section.name
+      %td= truncate resume_section.content, length: 140
+      %td= link_to 'Show', resume_section
+      %td= link_to 'Edit', edit_resume_section_path(resume_section)
+      %td= link_to 'Destroy', resume_section, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Resume section', new_resume_section_path
